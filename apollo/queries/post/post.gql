@@ -1,0 +1,14 @@
+query Posts($slug: String!) {
+  postBySlug(slug: $slug) {
+    id
+    title
+    content
+    preview
+    slug
+    minutes_read
+    image {
+      url
+    }
+    published_at
+  }
+}

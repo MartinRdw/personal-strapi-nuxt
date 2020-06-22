@@ -1,0 +1,17 @@
+query Posts {
+  posts {
+    id
+    title
+    content
+    preview
+    minutes_read
+    slug
+    published_at
+    image {
+      url
+    }
+    category{
+      name
+    }
+  }
+}

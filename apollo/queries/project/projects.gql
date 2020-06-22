@@ -1,0 +1,11 @@
+query Projects {
+  projects(sort: "position:ASC") {
+    id
+    title
+    content
+    url
+    logo {
+      url
+    }
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "name": "martin-personal",
+  "version": "1.0.0",
+  "description": "Martin personal website",
+  "author": "Martin Riedweg",
+  "private": true,
+  "scripts": {
+    "dev": "nuxt",
+    "build": "nuxt build",
+    "start": "nuxt start",
+    "generate": "nuxt generate",
+    "lint": "eslint --ext .js,.vue --ignore-path .gitignore .",
+    "lintfix": "eslint --fix --ext .js,.vue --ignore-path .gitignore ."
+  },
+  "dependencies": {
+    "@nuxtjs/apollo": "^4.0.1-rc.1",
+    "@nuxtjs/dotenv": "^1.4.0",
+    "@nuxtjs/markdownit": "^1.2.9",
+    "apollo-cache-inmemory": "^1.6.6",
+    "eslint-plugin-prettier": "^3.1.4",
+    "graphql": "^15.1.0",
+    "graphql-tag": "^2.10.3",
+    "markdown-it-highlightjs": "^3.1.0",
+    "nuxt": "^2.0.0"
+  },
+  "devDependencies": {
+    "@babel/runtime-corejs3": "^7.10.2",
+    "@nuxtjs/eslint-config": "^2.0.0",
+    "@nuxtjs/eslint-module": "^1.0.0",
+    "@nuxtjs/tailwindcss": "^1.0.0",
+    "babel-eslint": "^10.0.1",
+    "core-js": "3",
+    "eslint": "^6.1.0",
+    "eslint-plugin-nuxt": ">=0.4.2"
+  }
+}
