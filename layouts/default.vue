@@ -1,12 +1,5 @@
 <template>
   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-    <!-- <ul class="uk-navbar-nav">
-        <li v-for="(category, i) in categories" :key="i">
-          <router-link :to="{ name: 'categories-id', params: { id: category.id }}" tag="a">
-            {{ category.name }}
-          </router-link>
-        </li>
-      </ul> -->
     <div class="max-w-2xl mx-auto pb-32">
       <div class="py-7">
         <div class="flex items-center">
@@ -38,20 +31,9 @@
 </template>
 
 <script>
-import categoriesQuery from "~/apollo/queries/category/categories"
 
 export default {
-  data() {
-    return {
-      categories: []
-    }
-  },
-  apollo: {
-    categories: {
-      prefetch: true,
-      query: categoriesQuery
-    }
-  }
+  data() {},
 }
 </script>
 
