@@ -1,15 +1,20 @@
 <template>
   <div class="mt-6 post">
-    <h1>
-      {{ postBySlug.title }}
-    </h1>
+    <div v-if="$apollo.loading">
+          loading
+    </div>
+    <div v-else>
+      <h1>
+        {{ postBySlug.title }}
+      </h1>
 
-    <div class="mt-10">
-      <p>
-        {{ moment(postBySlug.published_at).format("MMM D, YYYY") }} ({{ postBySlug.minutes_read }} min read)
-      </p>
-      <!-- eslint-disable-next-line vue/no-v-html -->
-      <div id="editor" v-html="$md.render(formatPostContent(postBySlug.content))" />
+      <div class="mt-10">
+        <p>
+          {{ moment(postBySlug.published_at).format("MMM D, YYYY") }} ({{ postBySlug.minutes_read }} min read)
+        </p>
+        <!-- eslint-disable-next-line vue/no-v-html -->
+        <div id="editor" v-html="$md.render(formatPostContent(postBySlug.content))" />
+      </div>
     </div>
   </div>
 </template>
