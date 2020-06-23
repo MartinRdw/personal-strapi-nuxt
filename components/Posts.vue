@@ -11,11 +11,6 @@
         <p class="text-xs text-gray-500 text-sm mt-1">
           {{ moment(post.published_at).format("MMM D, YYYY") }}
         </p>
-        <!-- <div class="uk-card uk-card-muted"> -->
-        <!-- <div v-if="post.image" class="uk-card-media-top">
-            <img :src="api_url + post.image.url" alt="" height="100">
-          </div> -->
-        <!-- </div> -->
       </router-link>
     </div>
   </div>

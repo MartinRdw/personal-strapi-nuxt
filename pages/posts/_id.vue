@@ -10,7 +10,7 @@
       <p v-if="postBySlug.published_at">
         {{ moment(postBySlug.published_at).format("MMM D, YYYY") }} ({{ postBySlug.minutes_read }} min read)
       </p>
-      <div v-if="postBySlug.content" id="editor" v-html="$md.render(formatPostContent(postBySlug.content))" />
+      <div v-if="postBySlug.content" id="editor" v-html="$md.render(formatPostContent(postBySlug.content))"></div>
     </div>
   </div>
 </template>

@@ -12,15 +12,24 @@
               Martin Riedweg
             </div>
             <div class="flex items-center mt-1">
-              <nuxt-link to="/" class="uppercase text-xs font-semibold text-gray-400 hover:text-gray-600 tracking-wide transition duration-300">
+              <a
+                href="/"
+                class="uppercase text-xs font-semibold text-gray-400 hover:text-gray-600 tracking-wide transition duration-300"
+              >
                 Articles
-              </nuxt-link>
-              <nuxt-link to="/projects" class="ml-5 uppercase text-xs font-semibold text-gray-400 hover:text-gray-600 tracking-wide transition duration-300">
+              </a>
+              <a
+                href="/projects"
+                class="ml-5 uppercase text-xs font-semibold text-gray-400 hover:text-gray-600 tracking-wide transition duration-300"
+              >
                 Projects
-              </nuxt-link>
-              <nuxt-link to="/about" class="ml-5 uppercase text-xs font-semibold text-gray-400 hover:text-gray-600 tracking-wide transition duration-300">
+              </a>
+              <a
+                href="/about"
+                class="ml-5 uppercase text-xs font-semibold text-gray-400 hover:text-gray-600 tracking-wide transition duration-300"
+              >
                 About
-              </nuxt-link>
+              </a>
             </div>
           </div>
         </div>
@@ -31,24 +40,26 @@
 </template>
 
 <script>
-
 export default {
   data() {
     return {}
-  },
+  }
 }
 </script>
 
 <style>
-  body {
-    @apply text-gray-800
-  }
+body {
+  @apply text-gray-800;
+}
 
-  .nuxt-link-exact-active {
-    @apply text-gray-700;
-  }
+.a-exact-active {
+  @apply text-gray-700;
+}
 
-  code, kbd, samp, pre {
-    @apply text-sm;
-  }
+code,
+kbd,
+samp,
+pre {
+  @apply text-sm;
+}
 </style>
