@@ -98,5 +98,10 @@ export default {
         ]
       }
     }
+  },
+  generate: {
+    routes: [
+      '/posts/laravel-5-7-api-authentification-with-laravel-passport'
+    ]
   }
 }
