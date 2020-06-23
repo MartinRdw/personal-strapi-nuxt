@@ -7,8 +7,8 @@
       <div>
         <img class="h-20 w-auto" :src="api_url + project.logo.url" alt="">
       </div>
-      <div v-if="project.content" class="editor" v-html="md.render(project.content)">
-      </div>
+      <!-- eslint-disable-next-line vue/no-v-html -->
+      <div v-if="project.content" class="editor" v-html="md.render(project.content)" />
     </div>
   </div>
 </template>

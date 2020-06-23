@@ -1,16 +1,15 @@
 <template>
   <div class="mt-6 post">
-    <div v-if="postBySlug.image" id="banner" :data-src="api_url + postBySlug.image.url" uk-img>
-      <h1>
-        {{ postBySlug.title }}
-      </h1>
-    </div>
+    <h1>
+      {{ postBySlug.title }}
+    </h1>
 
     <div class="mt-10">
-      <p v-if="postBySlug.published_at">
+      <p>
         {{ moment(postBySlug.published_at).format("MMM D, YYYY") }} ({{ postBySlug.minutes_read }} min read)
       </p>
-      <div v-if="postBySlug.content" id="editor" v-html="$md.render(formatPostContent(postBySlug.content))"></div>
+      <!-- eslint-disable-next-line vue/no-v-html -->
+      <div id="editor" v-html="$md.render(formatPostContent(postBySlug.content))" />
     </div>
   </div>
 </template>
