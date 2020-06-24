@@ -1,7 +1,7 @@
 <template>
   <div class="mt-6 post">
     <div v-if="$apollo.loading">
-          loading
+      loading
     </div>
     <div v-else>
       <h1>
