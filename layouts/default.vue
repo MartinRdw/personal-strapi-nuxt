@@ -12,24 +12,15 @@
               Martin Riedweg
             </div>
             <div class="flex items-center mt-1">
-              <a
-                href="/"
-                class="uppercase text-xs font-semibold text-gray-400 hover:text-gray-600 tracking-wide transition duration-300"
-              >
+              <nuxt-link to="/" class="uppercase text-xs font-semibold text-gray-400 hover:text-gray-600 tracking-wide transition duration-300">
                 Articles
-              </a>
-              <a
-                href="/projects"
-                class="ml-5 uppercase text-xs font-semibold text-gray-400 hover:text-gray-600 tracking-wide transition duration-300"
-              >
+              </nuxt-link>
+              <nuxt-link to="/projects" class="ml-5 uppercase text-xs font-semibold text-gray-400 hover:text-gray-600 tracking-wide transition duration-300">
                 Projects
-              </a>
-              <a
-                href="/about"
-                class="ml-5 uppercase text-xs font-semibold text-gray-400 hover:text-gray-600 tracking-wide transition duration-300"
-              >
+              </nuxt-link>
+              <nuxt-link to="/about" class="ml-5 uppercase text-xs font-semibold text-gray-400 hover:text-gray-600 tracking-wide transition duration-300">
                 About
-              </a>
+              </nuxt-link>
             </div>
           </div>
         </div>
