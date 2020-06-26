@@ -45,7 +45,7 @@ body {
   @apply text-gray-800;
 }
 
-.a-exact-active {
+.nuxt-link-exact-active {
   @apply text-gray-700;
 }
 

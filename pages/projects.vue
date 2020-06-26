@@ -15,13 +15,24 @@
 
 <script>
 import projectsQuery from '~/apollo/queries/project/projects'
+var md = require('markdown-it')()
+
+var defaultRender = md.renderer.rules.link_open || function(tokens, idx, options, env, self) {
+  return self.renderToken(tokens, idx, options)
+}
+
+md.renderer.rules.link_open = function (tokens, idx, options, env, self) {
+  tokens[idx].attrPush(['target', '_blank'])
+  return defaultRender(tokens, idx, options, env, self)
+}
 
 export default {
   components: {},
   data() {
     return {
       projects: [],
-      api_url: process.env.strapiBaseUri
+      api_url: process.env.strapiBaseUri,
+      md: md
     }
   },
   apollo: {
