@@ -5,7 +5,7 @@
         <h2>{{ project.title }}</h2> <a class="self-end ml-2 mb-1 link" :href="`https://${project.url}`" target="_blank">({{ project.url }})</a>
       </div>
       <div>
-        <img class="h-20 w-auto" :src="api_url + project.logo.url" alt="">
+        <img class="h-20 w-auto" :src="project.logo.url" alt="">
       </div>
       <!-- eslint-disable-next-line vue/no-v-html -->
       <div v-if="project.content" class="editor" v-html="md.render(project.content)" />
