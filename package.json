@@ -21,7 +21,6 @@
     "eslint-plugin-prettier": "^3.1.4",
     "graphql": "^15.1.0",
     "graphql-tag": "^2.10.3",
-    "markdown-it-highlightjs": "^3.1.0",
     "nuxt": "^2.1.13",
     "pg": "^8.2.1"
   },
