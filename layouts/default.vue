@@ -39,7 +39,6 @@ export default {
 </script>
 
 <style>
-@import "~/node_modules/highlight.js/styles/agate.css";
 
 body {
   @apply text-gray-800;
