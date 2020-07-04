@@ -42,7 +42,9 @@ export default {
     return {
       title: this.postBySlug.title,
       meta: [
-        { hid: 'description', name: 'description', content: this.postBySlug.preview }
+        { hid: 'description', name: 'description', content: this.postBySlug.preview },
+        { hid: 'og:description', name: 'og:description', content: this.postBySlug.preview },
+        { hid: 'og:image', name: 'og:image', content: `${this.api_url}${this.postBySlug.image.url}` },
       ],
     }
   },
