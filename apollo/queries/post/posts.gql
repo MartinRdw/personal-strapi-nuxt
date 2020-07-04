@@ -1,5 +1,5 @@
 query Posts {
-  posts {
+  posts(sort: "published_at:DESC") {
     id
     title
     content
