@@ -26,9 +26,7 @@ export default {
   /*
   ** Global CSS
   */
-  css: [
-    { src: '~/node_modules/highlight.js/styles/agate.css', lang: 'css' }
-  ],
+  css: [],
   /*
   ** Plugins to load before mounting the App
   */
