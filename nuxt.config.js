@@ -62,6 +62,9 @@ export default {
     preset: 'default',
     linkify: true,
     breaks: true,
+    use: [
+      'markdown-it-highlightjs'
+    ],
     injected: true
   },
   /*
@@ -94,7 +97,6 @@ export default {
           ]
         ]
       }
-    },
-    cssSourceMap: true
+    }
   }
 }
