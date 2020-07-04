@@ -12,8 +12,8 @@ export default {
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
       { name: 'keywords', content: 'Martin Riedweg, freelance, laravel, vue' },
       { name: 'copyright', content: 'Martin Riedweg' },
-      { hid: 'description', name: 'description', content: 'My name is Martin, I\'m an engineering student and software developer. I’m also an indie maker that built SAAS projects.' },
-      { hid: 'og:description', name: 'og:description', content: 'My name is Martin, I\'m an engineering student and software developer. I’m also an indie maker that built SAAS projects.' },
+      { hid: 'description', name: 'description', content: 'My name is Martin, I\'m an engineering student and software developer. I’m also an indie maker that built SAAS products.' },
+      { hid: 'og:description', name: 'og:description', content: 'My name is Martin, I\'m an engineering student and software developer. I’m also an indie maker that built SAAS products.' },
       { hid: 'og:image', name: 'og:image', content: 'https://martin-riedweg.s3.eu-west-3.amazonaws.com/martin_riedweg_com_c7841d749e.png' }
     ],
     link: [
