@@ -6,7 +6,7 @@ export default {
   */
   target: 'static',
   head: {
-    title: 'Martin Riedweg',
+    title: 'Martin Riedweg | Freelance Software Engineer & Indie Maker',
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
@@ -62,10 +62,7 @@ export default {
     preset: 'default',
     linkify: true,
     breaks: true,
-    injected: true,
-    use: [
-      'markdown-it-highlightjs'
-    ]
+    injected: true
   },
   /*
   ** Build configuration

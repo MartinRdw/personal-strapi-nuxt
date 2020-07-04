@@ -35,6 +35,12 @@ export default {
       md: md
     }
   },
+  head: {
+    title: 'Martin Riedweg | Projects',
+    meta: [
+      { hid: 'description', name: 'description', content: 'The list of sides projects I worked on. Some are still alive, others have been sold or stopped.' }
+    ],
+  },
   apollo: {
     projects: {
       prefetch: true,

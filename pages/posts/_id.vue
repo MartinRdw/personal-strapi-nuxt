@@ -31,6 +31,21 @@ export default {
       api_url: process.env.strapiBaseUri
     }
   },
+  methods: {
+    formatPostContent(content) {
+      const searchRegExp = /\/uploads/g
+      const replaceWith = `${this.api_url}/uploads`
+      return content.replace(searchRegExp, replaceWith)
+    }
+  },
+  head () {
+    return {
+      title: this.postBySlug.title,
+      meta: [
+        { hid: 'description', name: 'description', content: this.postBySlug.preview }
+      ],
+    }
+  },
   apollo: {
     postBySlug: {
       prefetch: true,
@@ -38,13 +53,6 @@ export default {
       variables () {
         return { slug: this.$route.params.id }
       }
-    }
-  },
-  methods: {
-    formatPostContent(content) {
-      const searchRegExp = /\/uploads/g
-      const replaceWith = `${this.api_url}/uploads`
-      return content.replace(searchRegExp, replaceWith)
     }
   }
 }
