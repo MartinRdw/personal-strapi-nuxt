@@ -13,7 +13,8 @@ export default {
       { hid: 'description', name: 'description', content: 'My name is Martin, I\'m an engineering student and software developer. I’m also an indie maker that built SAAS projects.' }
     ],
     link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
+      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
+      { rel: 'stylesheet', href: 'https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.1/styles/agate.min.css'}
     ]
   },
   env: {
@@ -26,9 +27,7 @@ export default {
   /*
   ** Global CSS
   */
-  css: [
-    '~/node_modules/highlight.js/styles/agate.css'
-  ],
+  css: [],
   /*
   ** Plugins to load before mounting the App
   */
@@ -98,6 +97,7 @@ export default {
           ]
         ]
       }
-    }
+    },
+    cssSourceMap: true
   }
 }
