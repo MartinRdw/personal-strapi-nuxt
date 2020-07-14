@@ -1,5 +1,5 @@
 <template>
-  <div class="mt-6 post">
+  <div class="max-w-2xl mx-auto mt-6 post">
     <div v-if="$apollo.loading">
       loading
     </div>

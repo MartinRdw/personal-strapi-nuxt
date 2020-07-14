@@ -1,8 +1,8 @@
 <template>
-  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-    <div class="max-w-2xl mx-auto pb-32">
+  <div class="mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="pb-32">
       <div class="py-7">
-        <div class="flex items-center">
+        <div class="max-w-2xl mx-auto flex items-center">
           <a
             class="w-16 h-16 object-cover rounded-full overflow-hidden"
             href="/"

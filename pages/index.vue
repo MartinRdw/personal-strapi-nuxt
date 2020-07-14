@@ -1,5 +1,5 @@
 <template>
-  <div class="mt-6">
+  <div class="max-w-2xl mx-auto mt-6">
     <Posts :posts="posts" />
   </div>
 </template>

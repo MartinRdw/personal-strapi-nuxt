@@ -1,5 +1,5 @@
 <template>
-  <div class="mt-6">
+  <div class="max-w-2xl mx-auto mt-6">
     <div v-for="(project, i) in projects" :key="i" class="project mb-6" :class="{'border-b': (i + 1) !== projects.length}">
       <div class="flex mb-6">
         <h2>{{ project.title }}</h2> <a class="self-end ml-2 mb-1 link" :href="`https://${project.url}`" target="_blank">({{ project.url }})</a>
