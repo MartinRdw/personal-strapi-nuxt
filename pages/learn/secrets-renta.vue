@@ -1,6 +1,6 @@
 <template>
-  <div>
-    <iframe width="560" height="350" :src="url" frameborder="0" allowfullscreen></iframe>
+  <div class="max-w-2xl mx-auto">
+    <iframe width="560" height="350" :src="url" frameborder="0" allowfullscreen />
   </div>
 </template>
 
